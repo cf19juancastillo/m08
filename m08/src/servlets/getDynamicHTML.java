@@ -29,6 +29,7 @@ public class getDynamicHTML extends HttpServlet {
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<title>Catalogo de productos</title>");
+        out.println("<link href=\"css.css\" rel=\"stylesheet\">");
 		out.println("<meta charset='UTF-8'>");
 		out.println("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
 		out.println("</head>");

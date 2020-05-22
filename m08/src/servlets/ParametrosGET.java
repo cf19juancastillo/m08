@@ -13,8 +13,11 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class ParametrosGET
  */
 @WebServlet(name="ParametrosGET", urlPatterns="/ParametrosGET")
-public class ParametrosGET extends HttpServlet {
-
+public class ParametrosGET extends HttpServlet{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -35,6 +38,7 @@ public class ParametrosGET extends HttpServlet {
                 out.println("<html>");
                 out.println("<head>");
                 out.println("<title>Login</title>");
+                out.println("<link href=\"css.css\" rel=\"stylesheet\">");
                 out.println("</head>");
                 out.println("<body>");
                 out.println("<h3>Identificador de usuario ("+id+" correcto)</h3>");
@@ -46,12 +50,10 @@ public class ParametrosGET extends HttpServlet {
             response.sendError(HttpServletResponse.SC_UNAUTHORIZED);
         }
 	}
-
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("Método doPost");		
 	}
-
 }

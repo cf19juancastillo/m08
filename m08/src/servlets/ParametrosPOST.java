@@ -14,6 +14,10 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/ParametrosPOST")
 public class ParametrosPOST extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -43,6 +47,7 @@ public class ParametrosPOST extends HttpServlet {
 				out.println("<html>");
 				out.println("<head>");
 				out.println("<title>Login</title>");
+		        out.println("<link href=\"css.css\" rel=\"stylesheet\">");
 				out.println("</head>");
 				out.println("<body>");
 				out.println("<h3>Identificador de usuario (" + id + " correcto)</h3>");
@@ -53,7 +58,5 @@ public class ParametrosPOST extends HttpServlet {
 			// Respuesta de error indicando que no estamos autorizados
 			response.sendError(HttpServletResponse.SC_UNAUTHORIZED);
 		}
-
 	}
-
 }

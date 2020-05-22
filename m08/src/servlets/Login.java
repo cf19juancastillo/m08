@@ -20,7 +20,7 @@ public class Login extends HttpServlet {
         
         //Si el usuario es correcto (admin -admin) redirigimos a inicio.html, en caso contrario, a error.html
         if (user.equals("admin") && pass.equals("admin")){
-            response.sendRedirect("inicio.html");
+            response.sendRedirect("menu.html");
         }else{
             response.sendRedirect("error.html");
         }        
