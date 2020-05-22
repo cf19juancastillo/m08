@@ -15,6 +15,7 @@ import org.hsqldb.persist.HsqlProperties;
 public class DJHSQLDBMain {
 	/**
 	 * @param args
+	 * Conexion a la base de datos hypersql
 	 */
 	public static void main(String[] args) {
 		Connection connection = null;
