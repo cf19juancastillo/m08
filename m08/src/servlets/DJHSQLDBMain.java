@@ -8,7 +8,14 @@ import java.sql.ResultSet;
 import org.hsqldb.Server;
 import org.hsqldb.persist.HsqlProperties;
 
+/**
+ * @author juan
+ *
+ */
 public class DJHSQLDBMain {
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Connection connection = null;
 		Statement statement = null;

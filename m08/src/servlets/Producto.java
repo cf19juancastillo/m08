@@ -1,5 +1,9 @@
 package servlets;
 
+/**
+ * @param i, categoria, nombre, precio
+ * @return id, categoria, nombre, precio
+ */
 public class Producto {
 	private int id;
     private String categoria;

@@ -2,7 +2,10 @@ package servlets;
 
 import java.util.LinkedList;
 import java.util.List;
-
+/**
+ * @param List producto
+ * @return catalogo
+ */
 public class ProductoDB {
 	 private static List<Producto> catalogo;
 

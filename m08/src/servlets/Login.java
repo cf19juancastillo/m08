@@ -7,12 +7,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class Login
- */
 @WebServlet("/Login")
 public class Login extends HttpServlet {
-
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	
 	//Usamos doPost ya que el envío es mediante un formulario
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String user= request.getParameter("username");
