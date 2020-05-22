@@ -3,26 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <title>Peticiones</title>
+<link href="css.css" rel="stylesheet">
 </head>
 <body>
-		<h1>Envío GET!!!</h1>
+<ul>
+  <li><a href="Index.html">Home</a></li>
+  <li><a href="inicio.html">Parametros</a></li>
+  <li><a href="Menu.html">Respuestas</a></li>
+  <li style="float:right"><a class="active" href="index.html">Sign Out</a></li>
+</ul>
+<div class="container">
+<h1>Peticion GET!</h1>
 		<a href="ParametrosGET?id=10&nombre=usuario">Link ID 10</a>
 		<br>
 		<a href="ParametrosGET?id=11&nombre=usuario">Link ID 11</a>
 		<br>
 		
 		<br>
-		<h1>Envío POST!!!</h1>
+		<h1>Peticion POST!!!</h1>
 		<div id="body">
 		<form name="contac_form" method="post" action="ParametrosPOST">
-				Nombre: <input type="text" name="nombre" /><br /> 
-				Identificador: <input type="text" name="id" /><br /> 
-				<input type="submit" name="submit" value="Enviar">
+				Name: <input type="text" name="nombre" /><br /> 
+				ID: <input type="text" name="id" /><br /> 
+				<input class="btn2" type="submit" name="submit" value="Enviar">
 		</form>
-		</div>		
-		<br>
-		<h1>GET DYNAMIC HTML!!!</h1>
-		<a href="getDynamicHTML">Respuesta HTML dinámica</a>
-		<br>
+		</div>
+</div>
 </body>
 </html>
